@@ -47,9 +47,9 @@ Create a second object with name, surname, email address and verify that this ob
 
 // const user2 = Object.assign({}, user)
 // user2.name = "yo"
-// user2.surname = "estoy"
+// user2.surname = "tu"
 // user2.age = 40
-// user2.email = "loco"
+// user2.email = "el"
 // console.log(user2)
 
 // if (user.email !== user2.email) {
@@ -75,7 +75,7 @@ Write an algorithm that calculate totalCost based on this assumption.
 // else {
 // price= totalshoppingcart+10
 // }
-// console.log(price)
+// console.log("total" price)
 
 
 
@@ -95,7 +95,7 @@ Modify the previous answer inserting this information and, applying the same rul
 // price= totalshoppingcart+10
 // }
 // let discountedprice = price - (totalshoppingcart*20/100)
-// console.log(discountedprice)
+// console.log("total" discountedprice)
 
 
 /* EXERCISE 8
