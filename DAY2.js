@@ -12,8 +12,8 @@ ASSIGNMENT RULES
 Create and array containing the first 5 positive numbers.
 */
 
-// let ListOfNumbers = [1,2,3,4,5]
-// console.log (ListOfNumbers)
+let ListOfNumbers = [1,2,3,4,5]
+console.log (ListOfNumbers)
 
 
 /* EXERCISE 2
