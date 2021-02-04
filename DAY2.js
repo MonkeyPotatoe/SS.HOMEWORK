@@ -12,8 +12,8 @@ ASSIGNMENT RULES
 Create and array containing the first 5 positive numbers.
 */
 
-let ListOfNumbers = [1,2,3,4,5]
-console.log (ListOfNumbers)
+// let ListOfNumbers = [1,2,3,4,5]
+// console.log (ListOfNumbers)
 
 
 /* EXERCISE 2
@@ -25,7 +25,6 @@ Create an object containing your name, surname, email address and age.
 // surname: "Bonadiman",
 // email: "enrico.bonadiman.sk@gmail.com",
 // age: 25,
-// hasdrivinglicense: true,
 // }
 // console.log (user)
 
@@ -33,6 +32,8 @@ Create an object containing your name, surname, email address and age.
 Add to the previously created object a boolean value to rappresent wheter you have or not a driving license.
 */
 
+// user.hasdrivinglicense= true
+// console.log (user)
 
 /* EXERCISE 4
 Remove from the previously created object the age property.
@@ -46,10 +47,10 @@ Create a second object with name, surname, email address and verify that this ob
 */
 
 // const user2 = Object.assign({}, user)
-// user2.name = "yo"
-// user2.surname = "tu"
+// user2.name = "Giorgio"
+// user2.surname = "Calabbresi"
 // user2.age = 40
-// user2.email = "el"
+// user2.email = "giorgio.calabb@gmail.com"
 // console.log(user2)
 
 // if (user.email !== user2.email) {
@@ -58,8 +59,6 @@ Create a second object with name, surname, email address and verify that this ob
 // else {
 //  console.log ("emails are matching")   
 // }
-
-
 
 /* EXERCISE 6
 You are working for a eCommerce. In the variable totalShoppingCart you have the total amount spent by the current user.
@@ -77,10 +76,6 @@ Write an algorithm that calculate totalCost based on this assumption.
 // }
 // console.log("total" price)
 
-
-
-
-
 /* EXERCISE 7
 You are working for the same eCommerce. Today is the black friday and everything has a 20% discount at the end of the purchase.
 Modify the previous answer inserting this information and, applying the same rules for the shipping cost, calculate the totalCost.
@@ -96,7 +91,6 @@ Modify the previous answer inserting this information and, applying the same rul
 // }
 // let discountedprice = price - (totalshoppingcart*20/100)
 // console.log("total" discountedprice)
-
 
 /* EXERCISE 8
 Create an object rapresenting a car with properties like brand, model, licensePlate.
@@ -132,21 +126,21 @@ Create a new array called carsForRent containing all the cars from the previous 
 */
 
 const carforrent = [car,car2,car3,car4,car5]
-console.log (carforrent)
 
 /* EXERCISE 10
 Remove the first and the last car from the carsForRent array.
 */
 
-// delete carforrent[0,4]
-// console.log (carforrent)
+carforrent.pop(0)
+carforrent.shift(4)
+console.log (carforrent)
 
 
 /* EXERCISE 11
 Print in the console the TYPES of a car, of the licensePlate and of the brand properties.
 */
 
-console.log (carforrent.model, carforrent.brand, carforrent.licenseplate)
+console.log (typeof(car.Licenseplate), typeof(car.brand), typeof(car.model))
 
 
 /* EXERCISE 12
@@ -154,13 +148,15 @@ Create a new array called carsForSale and insert 3 cars in it.
 Store in a variable totalCars the number of cars present in both carsForSale and carsForRent arrays.
 */
 
-/* WRITE YOUR CODE HERE */
+const carsforsale = [car, car2, car3]
+var totalcars = Object.assign ({}, car)
+console.log (carforsale)
 
 /* EXERCISE 13
 Print in the console the data from each car in the carsForSale array.
 */
 
-/* WRITE YOUR CODE HERE */
+
 
 /* WHEN YOU ARE FINISHED
 Send the code via Discord to the tutor! In the next days we'll also learn how to use GIT
