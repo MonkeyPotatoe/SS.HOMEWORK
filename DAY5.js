@@ -78,40 +78,100 @@ console.log (me)
     Write the function dice that randomize an integer number between 1 and 6.
 */
 
+function randomnumbers (min,max) {
+min = Math.ceil(min);
+max = Math.floor(max);
+return Math.floor(Math.random() * (max - min + 1)) + min;
+
+}
+console.log(`random numbers: ${randomnumbers(1,6)}`)
+
 /* Ex.2 
     Write the function whoIsBigger that receives 2 numbers and returns the bigger of the two.
 */
+
+function whoisbigger (a,b) {
+  if (a>b) {
+  return a
+  }
+  if (b>a) {
+  return b
+  }
+  }
+  console.log(`Who is bigger: ${whoisbigger(9,6)}`)
 
 /* Ex.3
     Write the function splitMe that receives a string and returns an array with every word in that string.
     Ex. splitMe("I love coding") => returns [ "I","Love","Coding"]
 */
 
+const coding = function(str) {
+return str.split(' ')
+}
+console.log(`How to split stuff: `, coding(`hello world`))
+console.log(`How to split stuff: ` , coding(`My name is Enrico `))
+
 /* Ex.4
-    Write the function deleteOne that receives a string and a boolean. If the boolean is true it should return the string without the first letter, otherwise it should remove the last one.
+    Write the function deleteOne that receives a string and a boolean. 
+    If the boolean is true it should return the string without the first letter, otherwise it should remove the last one.
 */
+
+function splitme (str, bool) {
+  if (bool===true) {
+    return str.substring(1)
+  }
+  else {
+   return str.substring(-1)
+}
+}
+
+console.log(splitme('hello', true))
+
 
 /* Ex.5
    Write the function onlyLetters that receives a string, removes all the numbers and returns it.
    Ex.: onlyLetters("I love 123 whatever")  => returns "I love whatever"
 */
 
-/* Ex.6 
-   Write the function isThisAnEmail that receives a string and returns true if the string is a valid email.
-*/
+function onlyletters (str) {
+str.replace(/[0-9]/g, '')
+}
+console.log(onlyletters ('hey 5666 anni fa loco'))
 
-/* Ex.7
-   Write the function whatDayIsIt that should return the current day of the week.
-*/
+// /* Ex.6 
+//    Write the function isThisAnEmail that receives a string and returns true if the string is a valid email.
+// */
 
-/* Ex.8
-    Write the function rollTheDices that receives a numeric input.
-    It should use the Dice function defined in Ex1 and return an object that contains both the sum of all values extracted and the single values of the dicerolls themselves.
-    Example: RollTheDices(3) => returns {
-        sum: 10
-        values: [ 3, 3, 4]
-    }
-*/
+// function isthisanemail (str) {
+//   if (str.contains('.com','@')) {
+//    return console.log(str)
+//   }
+//   else {
+//   return false
+//   }
+// }
+// console.log(isthisanemail ("enrico.bonadiman.sk@yahoot.com"))
+
+
+
+// console.log(isthisanemail('enrico.bonadiman.sk@gmail.com'))
+// /* Ex.7
+//    Write the function whatDayIsIt that should return the current day of the week.
+// */
+
+function whatdayisit (today) {
+const toDate = new Date(today)
+return toDate.getDay([])
+}
+console.log (whatdayisit ('02/25/2020'))
+// /* Ex.8
+//     Write the function rollTheDices that receives a numeric input.
+//     It should use the Dice function defined in Ex1 and return an object that contains both the sum of all values extracted and the single values of the dicerolls themselves.
+//     Example: RollTheDices(3) => returns {
+//         sum: 10
+//         values: [ 3, 3, 4]
+//     }
+// */
 
 /* Ex.9
    Write the function howManyDays that receives a date and returns the number of days that has passed since that day.
