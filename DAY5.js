@@ -78,13 +78,13 @@ console.log (me)
     Write the function dice that randomize an integer number between 1 and 6.
 */
 
-function randomnumbers (min,max) {
+function dice (min,max) {
 min = Math.ceil(min);
 max = Math.floor(max);
 return Math.floor(Math.random() * (max - min + 1)) + min;
 
 }
-console.log(`random numbers: ${randomnumbers(1,6)}`)
+console.log(`random numbers: ${dice(1,6)}`)
 
 /* Ex.2 
     Write the function whoIsBigger that receives 2 numbers and returns the bigger of the two.
@@ -134,7 +134,7 @@ console.log(splitme('hello', true))
 */
 
 function onlyletters (str) {
-str.replace(/[0-9]/g, '')
+str.replace(/\d+/g, '')
 }
 console.log(onlyletters ('hey 5666 anni fa loco'))
 
@@ -172,6 +172,11 @@ console.log (whatdayisit ('02/25/2020'))
 //         values: [ 3, 3, 4]
 //     }
 // */
+
+function rollthedices (number) {
+
+
+}
 
 /* Ex.9
    Write the function howManyDays that receives a date and returns the number of days that has passed since that day.

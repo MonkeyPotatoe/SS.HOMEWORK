@@ -72,7 +72,7 @@ console.log ("the names are equal")
 Create a variable named x (its value must be less than 10). Write the code to print the literal value of x (ex.: if x is 1 print "one", if 5 print "five" etc.).
 */
 
-var  x = 8
+var  x = 7
 if (x === 1) {
     console.log ("one")
 } 

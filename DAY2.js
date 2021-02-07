@@ -12,53 +12,53 @@ ASSIGNMENT RULES
 Create and array containing the first 5 positive numbers.
 */
 
-// let ListOfNumbers = [1,2,3,4,5]
-// console.log (ListOfNumbers)
+let ListOfNumbers = [1,2,3,4,5]
+console.log (ListOfNumbers)
 
 
 /* EXERCISE 2
 Create an object containing your name, surname, email address and age.
 */
 
-// let user =  {
-// name: "Enrico", 
-// surname: "Bonadiman",
-// email: "enrico.bonadiman.sk@gmail.com",
-// age: 25,
-// }
-// console.log (user)
+let user =  {
+name: "Enrico", 
+surname: "Bonadiman",
+email: "enrico.bonadiman.sk@gmail.com",
+age: 25,
+}
+console.log (user)
 
 /* EXERCISE 3
 Add to the previously created object a boolean value to rappresent wheter you have or not a driving license.
 */
 
-// user.hasdrivinglicense= true
-// console.log (user)
+user.hasdrivinglicense= true
+console.log (user)
 
 /* EXERCISE 4
 Remove from the previously created object the age property.
 */
 
-// delete user.age
-// console.log(user)
+delete user.age
+console.log(user)
 
 /* EXERCISE 5
 Create a second object with name, surname, email address and verify that this object has a different email address than the previous one.
 */
 
-// const user2 = Object.assign({}, user)
-// user2.name = "Giorgio"
-// user2.surname = "Calabbresi"
-// user2.age = 40
-// user2.email = "giorgio.calabb@gmail.com"
-// console.log(user2)
+const user2 = Object.assign({}, user)
+user2.name = "Giorgio"
+user2.surname = "Calabbresi"
+user2.age = 40
+user2.email = "giorgio.calabb@gmail.com"
+console.log(user2)
 
-// if (user.email !== user2.email) {
-// console.log ("emails are not matching")
-// }
-// else {
-//  console.log ("emails are matching")   
-// }
+if (user.email !== user2.email) {
+console.log ("emails are not matching")
+}
+else {
+ console.log ("emails are matching")   
+}
 
 /* EXERCISE 6
 You are working for a eCommerce. In the variable totalShoppingCart you have the total amount spent by the current user.
@@ -66,15 +66,15 @@ In your eCommerce you have a promotion: if the customer shopping cart is more th
 Write an algorithm that calculate totalCost based on this assumption.
 */
 // 
-// let totalshoppingcart = 500
-// let price 
-// if (totalshoppingcart>50) {
-// price=totalshoppingcart-10     
-// }
-// else {
-// price= totalshoppingcart+10
-// }
-// console.log("total" price)
+let totalshoppingcart = 500
+let price 
+if (totalshoppingcart>50) {
+price=totalshoppingcart-10     
+}
+else {
+price= totalshoppingcart+10
+}
+console.log("total", price)
 
 /* EXERCISE 7
 You are working for the same eCommerce. Today is the black friday and everything has a 20% discount at the end of the purchase.
@@ -90,7 +90,7 @@ Modify the previous answer inserting this information and, applying the same rul
 // price= totalshoppingcart+10
 // }
 // let discountedprice = price - (totalshoppingcart*20/100)
-// console.log("total" discountedprice)
+// console.log("total", discountedprice)
 
 /* EXERCISE 8
 Create an object rapresenting a car with properties like brand, model, licensePlate.
@@ -149,13 +149,14 @@ Store in a variable totalCars the number of cars present in both carsForSale and
 */
 
 const carsforsale = [car, car2, car3]
-var totalcars = Object.assign ({}, car)
-console.log (carforsale)
+let totalCars = [carforrent, carsforsale]
+console.log(totalcars)
+
 
 /* EXERCISE 13
 Print in the console the data from each car in the carsForSale array.
 */
-
+console.log (carsforsale)
 
 
 /* WHEN YOU ARE FINISHED

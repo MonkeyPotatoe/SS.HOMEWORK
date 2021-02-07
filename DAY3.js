@@ -29,6 +29,7 @@ return (x+y);
 }
 }
 console.log (`crazysum:` + (crazysum (7,7)))
+
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
 It should return triple their absolute difference if the given number is greater than 19.
@@ -62,15 +63,17 @@ Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
 
-const strivify = function (x) {
-if (x==="Strive") {
-return (x)
+const strivify = function (string) {
+if (string==="Strive") {
+return (string)
 }
 else {
-return ("Strive" + '')
+return ("Strive" + string)
 }
 }
-strivify('hello')
+console.log(strivify('Strive hello'))
+
+
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
 HINT: Module Operator
@@ -80,7 +83,6 @@ const check3and7 = function (x) {
 
 }
 
-}
 
 /* EXERCISE 7
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
