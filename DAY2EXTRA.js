@@ -33,8 +33,15 @@ console.log(Math.min(...numbers))
 Write the code to get only even numerical values in an array.
 */
 
-let numberlenght = numbers.lenght()
-console.log(numberlenght)
+var a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+b = [];
+
+for (var i = 0; i < a.length; ++i) { 
+if ((a[i] % 2) === 0) {
+    b.push(a[i]);
+}
+}
+console.log(b)
 
 /* EXERCISE 5
 Write the code to delete even entries from an array.
@@ -56,9 +63,4 @@ Write the code to increase all the numeric values in a array by 1.
 /* EXERCISE 8 
 Replace all the strings in an array with their length.
 es.: [ "strive", "is", "good"] => [ 5 , 2, 4]
-*/
-
-
-/* WHEN YOU ARE FINISHED
-Send the code via Eduflow to the tutor! In the next days we'll also learn how to use GIT 
 */

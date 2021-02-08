@@ -64,14 +64,14 @@ It should add the word "Strive" in front of the given string, but if the given s
 */
 
 const strivify = function (string) {
-if (string==="Strive") {
+if (string[0]==="Strive") {
 return (string)
 }
-else {
-return ("Strive" + string)
+else (string[0] !== "Strive")  
+return ("Strive" + '' + string)
+
 }
-}
-console.log(strivify('Strive hello'))
+console.log(strivify('hello')) // HOW TO TAKE FIRST ELEMNT IN A STRING ??
 
 
 /* EXERCISE 6
@@ -79,7 +79,10 @@ Write a function "check3and7" which accepts a positive number and check if it is
 HINT: Module Operator
 */
 
-const check3and7 = function (x) {
+const check3and7 = function (number) {
+if (number>0) {
+number
+}
 
 }
 
@@ -88,25 +91,35 @@ const check3and7 = function (x) {
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR CODE HERE */
+const ReverseString = function (str) {
+var splitstring = str.split('')
+var reversearray = splitstring.reverse()
+var joinarray = reversearray.join('')
+return joinarray
+}
+console.log(ReverseString("hello!!"))
 
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
 
-/* WRITE YOUR CODE HERE */
+
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
 
-/* WRITE YOUR CODE HERE */
+const CutString = function (str) {
+    var slice = str.slice(1,)
+    
+    }
+    console.log(CutString("hello!!"))
+    
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-/* WRITE YOUR CODE HERE */
 
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.

@@ -142,15 +142,15 @@ console.log(onlyletters ('hey 5666 anni fa loco'))
 //    Write the function isThisAnEmail that receives a string and returns true if the string is a valid email.
 // */
 
-// function isthisanemail (str) {
-//   if (str.contains('.com','@')) {
-//    return console.log(str)
-//   }
-//   else {
-//   return false
-//   }
-// }
-// console.log(isthisanemail ("enrico.bonadiman.sk@yahoot.com"))
+function isthisanemail (str) {
+  if (str.contains('.com','@')) {
+   return console.log(str)
+  }
+  else {
+  return false
+  }
+}
+console.log(isthisanemail ("enrico.bonadiman.sk@yahoot.com"))
 
 
 
@@ -164,6 +164,7 @@ const toDate = new Date(today)
 return toDate.getDay([])
 }
 console.log (whatdayisit ('02/25/2020'))
+
 // /* Ex.8
 //     Write the function rollTheDices that receives a numeric input.
 //     It should use the Dice function defined in Ex1 and return an object that contains both the sum of all values extracted and the single values of the dicerolls themselves.
@@ -173,7 +174,7 @@ console.log (whatdayisit ('02/25/2020'))
 //     }
 // */
 
-function rollthedices (number) {
+function rollthedices (number) { 
 
 
 }

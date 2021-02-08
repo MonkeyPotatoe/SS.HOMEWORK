@@ -84,7 +84,8 @@ else if  (x === 3) {
 } 
 else if  ( x === 4) {
     console.log ("four")
-} else if (x === 5) {
+} 
+else if (x === 5) {
     console.log ("five")
 } 
 else if  ( x === 6) {
