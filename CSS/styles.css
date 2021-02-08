@@ -1,7 +1,7 @@
 * {
-margin: 3px;
+margin: 5px;
 }
-table {
-max-width: 600px;
+.image {
+max-width: 200px;
 max-height: 200px;
 }
