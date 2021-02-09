@@ -33,8 +33,8 @@ console.log(Math.min(...numbers))
 Write the code to get only even numerical values in an array.
 */
 
-const arrayOfNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-evenNumbers = [];
+const arrayOfNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], //---------- VERY HARD
+evenNumbers = []; 
 
 for (let i = 0; i < arrayOfNumbers.length; ++i) { 
 if (arrayOfNumbers[i] % 2 === 0) {
