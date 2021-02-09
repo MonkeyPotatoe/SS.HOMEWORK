@@ -148,9 +148,9 @@ Create a new array called carsForSale and insert 3 cars in it.
 Store in a variable totalCars the number of cars present in both carsForSale and carsForRent arrays.
 */
 
-const carsforsale = [car, car2, car3]
-let totalCars = [carforrent, carsforsale]
-console.log(totalcars)
+const carsforsale = [car, car2, car4]
+let totalCars = (carforrent.length + carsforsale.length)
+console.log(totalCars)
 
 
 /* EXERCISE 13

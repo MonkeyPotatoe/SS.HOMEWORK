@@ -13,7 +13,8 @@ background.style.backgroundcolor = 'grey'
 changeBackgroundcolor()
 
 const changeFooter = () => {
-let footer = document.get
+let footer = document.getElementsBytagName('footer')
+footer.
 
 }
 
