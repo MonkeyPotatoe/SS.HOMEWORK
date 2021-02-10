@@ -21,8 +21,8 @@
       */
 
       function addClassToh1(){
-      let headingclass = document.getElementById("h1")
-      headingclass.classList.add("myHeading")
+      let headingclass = document.getElementsByTagName("h1")
+      headingclass[0].classList.add("myHeading")
       }
       addClassToh1()
 
@@ -30,7 +30,8 @@
       Write a function for changing the text of only the p which are children of a div.
       */
 
-      function changePcontent(){
+      function changepText(){
+        let paragraph = document.querySelectorAll('div','p')
 
       }
 
@@ -73,8 +74,10 @@
       */
 
       function paintItGreen(){
-
-      }
+            let allLists = document.getElementsByTagName("ul")
+            for (let i = 0; i < allLists.length; i++){
+                allLists[i].style.background = "green"
+            }
 
       /* EXERCISE 9
       Make the heading of the page change color every time the user clicks on it.

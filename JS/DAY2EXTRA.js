@@ -33,8 +33,8 @@ console.log(Math.min(...numbers))
 Write the code to get only even numerical values in an array.
 */
 
-const arrayOfNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], //---------- VERY HARD
-evenNumbers = []; 
+const arrayOfNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+evenNumbers = []
 
 for (let i = 0; i < arrayOfNumbers.length; ++i) { 
 if (arrayOfNumbers[i] % 2 === 0) {
@@ -49,28 +49,43 @@ Write the code to delete even entries from an array.
 
 for (let i = 0; i < arrayOfNumbers.length; ++i) { 
     if (arrayOfNumbers[i] % 2 === 0) {
-        delete evenNumbers(arrayOfNumbers[i]);
-    } else 
+    arrayOfNumbers.splice(i--,1)
     }
+}
+console.log(arrayOfNumbers)
 
 
 
 /* EXERCISE 6
 Write the code to remove all the vowels from a string.
 */
-
+const ArrayNoVowels = []
+const str = "hello"
+      const toArray = str.split('')
+      for(let i = 0; i <str.lenght; i++) {
+      ArrayNoVowels.push(str.replace(/[aeiou]/gi, ''))
+      console.log(ArrayNoVowels)  
+      }
+      console.log(ArrayNoVowels)
+      
 
 
 /* EXERCISE 7
 Write the code to increase all the numeric values in a array by 1.
 */
 
-
+// for (let i = 0; i < arrayOfNumbers.length; ++i) { 
+//     arrayOfNumbers[i] % 2 === 0) {
+//         evenNumbers.push(arrayOfNumbers[i]);
+//     }
+    
 
 /* EXERCISE 8 
 Replace all the strings in an array with their length.
 es.: [ "strive", "is", "good"] => [ 5 , 2, 4]
 */
 
-let Arrayofstrings = ["strive","is","good"]
-console.log(Arrayofstrings[0].length, [1].length, [2].length)
+const Strivers = ["strive","is","good"]
+if (Strivers == ) {
+console.log ([0].lenght,[1].lenght,[2].lenght)
+}

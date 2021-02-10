@@ -44,6 +44,7 @@ return (x-19);
 }
 }
 console.log (`crazy difference:` + (crazydiff (140)))
+
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
