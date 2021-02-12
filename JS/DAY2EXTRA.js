@@ -13,79 +13,72 @@ es:
 [ 1 , 3, 5] ==> [5 , 3, 1]
 */
 
-let numbers = [1,2,3,4]
-numbers.reverse()
-console.log(numbers)
+let numbers = [1, 2, 3, 4];
+numbers.reverse();
+console.log(numbers);
 
 /* EXERCISE 2
 Write the code to get the maximum value in an array.
 */
 
-console.log(Math.max(...numbers))
+console.log(Math.max(...numbers));
 
 /* EXERCISE 3
 Write the code to get the minimum value in an array.
 */
 
-console.log(Math.min(...numbers))
+console.log(Math.min(...numbers));
 
 /* EXERCISE 4
 Write the code to get only even numerical values in an array.
 */
 
-const arrayOfNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-evenNumbers = []
+const arrayOfNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+evenNumbers = [];
 
-for (let i = 0; i < arrayOfNumbers.length; ++i) { 
-if (arrayOfNumbers[i] % 2 === 0) {
+for (let i = 0; i < arrayOfNumbers.length; ++i) {
+  if (arrayOfNumbers[i] % 2 === 0) {
     evenNumbers.push(arrayOfNumbers[i]);
+  }
 }
-}
-console.log(evenNumbers)
+console.log(evenNumbers);
 
 /* EXERCISE 5
 Write the code to delete even entries from an array.
 */
 
-for (let i = 0; i < arrayOfNumbers.length; ++i) { 
-    if (arrayOfNumbers[i] % 2 === 0) {
-    arrayOfNumbers.splice(i--,1)
-    }
+for (let i = 0; i < arrayOfNumbers.length; ++i) {
+  if (arrayOfNumbers[i] % 2 === 0) {
+    arrayOfNumbers.splice(i--, 1);
+  }
 }
-console.log(arrayOfNumbers)
-
-
+console.log(arrayOfNumbers);
 
 /* EXERCISE 6
 Write the code to remove all the vowels from a string.
 */
-const ArrayNoVowels = []
-const str = "hello"
-      const toArray = str.split('')
-      for(let i = 0; i <str.lenght; i++) {
-      ArrayNoVowels.push(str.replace(/[aeiou]/gi, ''))
-      console.log(ArrayNoVowels)  
-      }
-      console.log(ArrayNoVowels)
-      
-
+const ArrayNoVowels = [];
+const str = "hello";
+const toArray = str.split("");
+for (let i = 0; i < str.lenght; i++) {
+  if (i !== "a" || i !== "e" || i !== "i" || i !== "o" || i !== "u") {
+    ArrayNoVowels.push(str.replace(""));
+  }
+}
+console.log(ArrayNoVowels);
 
 /* EXERCISE 7
 Write the code to increase all the numeric values in a array by 1.
 */
-
-// for (let i = 0; i < arrayOfNumbers.length; ++i) { 
-//     arrayOfNumbers[i] % 2 === 0) {
-//         evenNumbers.push(arrayOfNumbers[i]);
+// numbers = [1,2,3,4]
+// for (let i = 1; i < arrayOfNumbers.length; ++i) {
+//     if
 //     }
-    
 
 /* EXERCISE 8 
 Replace all the strings in an array with their length.
 es.: [ "strive", "is", "good"] => [ 5 , 2, 4]
 */
 
-const Strivers = ["strive","is","good"]
-if (Strivers == ) {
-console.log ([0].lenght,[1].lenght,[2].lenght)
-}
+const Strivers = ["strive", "is", "good"];
+console.log(Strivers.lenght);
