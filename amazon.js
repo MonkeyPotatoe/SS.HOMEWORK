@@ -49,7 +49,7 @@ let newRandomArray = [[], [], [], []];
 for (let i = 0; i <= 100; i++) {}
 console.log(newRandomArray);
 
-function longestArray() {
+function longestArray(arr1, arr2) {
   const arr1 = [1, 2, 3, 4, 5];
   const arr2 = [1, 2];
   if (arr1.length() > arr2.length()) {
